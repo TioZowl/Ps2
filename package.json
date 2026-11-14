@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "npm --prefix Backend start",
+    "dev": "npm --prefix Backend run dev",
+    "check": "npm --prefix Backend test"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

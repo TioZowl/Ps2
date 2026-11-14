@@ -1,0 +1,90 @@
+/* Colores generales de la tienda. */
+body {
+    background: #D1E8CF;
+    color: #20312b;
+}
+
+#inicio {
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen y capa oscura para que el texto principal se lea bien. */
+.hero-section {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../upload/banner.jpg") center / cover no-repeat;
+    color: white;
+    min-height: 400px;
+}
+
+.hero-section h1 {
+    color: #6B8A69;
+    font-weight: 750;
+}
+
+#catalogo {
+    min-height: 300px;
+}
+
+/* Presentación de las tarjetas del catálogo. */
+.producto-card {
+    border: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem #163c2d18 !important;
+}
+
+.imagen-producto {
+    height: 210px;
+    object-fit: cover;
+    background: #e9efeb;
+}
+
+/* El precio se destaca dentro de cada tarjeta. */
+.precio-producto {
+    color: #155c42;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.eyebrow {
+    color: #37745b;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.detalle-imagen {
+    display: block;
+    max-height: 360px;
+    margin-inline: auto;
+    object-fit: contain;
+}
+
+.card {
+    border: 1px solid #e1e9e4;
+    border-radius: 1rem;
+}
+
+footer {
+    background-color: #6B8A69 !important;
+}
+
+/* Respeta la preferencia del navegador de reducir animaciones. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+.navbar-personalizada {
+    background-color: #6B8A69 !important;
+}
